@@ -30,7 +30,7 @@ migrate_working_dir/
 build/
 
 # fvm sdk
-.fvm/flutter_sdk
+.fvm/
 
 # vscode related
 .vscode
