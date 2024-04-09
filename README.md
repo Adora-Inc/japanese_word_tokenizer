@@ -11,18 +11,47 @@ and the Flutter guide for
 [developing packages and plugins](https://flutter.dev/developing-packages).
 -->
 
-Japanese Word Tokenizer
-A lightweight Japanese word tokenizer library for Dart and Flutter.
+# Japanese Word Tokenizer
 
-Features
-Tokenizes Japanese text into individual words
-Lightweight and fast
-Easy to use and integrate into Dart and Flutter projects
+A lightweight Japanese word tokenizer library for Dart and Flutter based on wakachigaki.
 
-Installation
-Add the following dependency to your pubspec.yaml file:
+## Features
+
+- Tokenizes Japanese text into individual words
+- Lightweight and fast
+- Easy to use and integrate into Dart and Flutter projects
+- Based on the [wakachigaki](https://github.com/yuhsak/wakachigaki-py) tokenizer algorithm by [Yushak Inoue](https://github.com/yuhsak)
+
+## Installation
+
+Add the following dependency to your `pubspec.yaml` file:
+
+```yaml
+dependencies:
+  japanese_word_tokenizer: ^0.0.3
 
 ```
-dependencies:
-  japanese_word_tokenizer: ^0.0.1
+
+Sample usage
+
+Import the package in your Dart code:
+
+```
+import 'package:japanese_word_tokenizer/japanese_word_tokenizer.dart';
+```
+
+In your main.dart
+
+```
+void main() {
+  String text = 'ここでテキストを分かち書きします';
+  List<dynamic> tokens = tokenize(text);
+  print(tokens);
+}
+```
+
+Sample output
+
+```
+[ここで, テキスト, を, 分か, ち, 書き, します]
 ```
