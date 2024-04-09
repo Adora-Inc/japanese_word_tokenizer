@@ -1,5 +1,5 @@
 name: japanese_word_tokenizer
-description: A new Flutter package project.
+description: A lightweight Japanese word tokenizer library for Dart and Flutter based on wakachigaki
 version: 0.0.1
 repository: https://github.com/Adora-Inc/japanese_word_tokenizer
 homepage: https://github.com/Adora-Inc/japanese_word_tokenizer
